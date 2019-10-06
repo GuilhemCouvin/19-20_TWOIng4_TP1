@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Resume</title>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <script src="https://kit.fontawesome.com/52f59eb28e.js" crossorigin="anonymous"></script>
+  <link rel="icon" href="http://example.com/favicon.png">
+
+  	<!-- Latest compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+</head>
+<body style="background-color: #ECF0F1;">
+
+
+<div class="page">
+
+<section class="about">
+  <div class="info">
+    <img class="photo" src="img/photo_identite.jpeg" alt="Photo CV Guilhem Couvin"/>
+    <p class="myInfo" align="center"style="color:white;">
+      <br/><br/>
+      <strong>Guilhem Couvin</strong><br/>
+      Étudiant en école d'ingénieur<br/>
+      <a style="color: white;" href="https://www.linkedin.com/in/guilhem-couvin-7a7173183/">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a style="color: white;" href="https://twitter.com/CouvinGuilhem">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </p>
+  </div>
+</section>
+
+<section class="form">
+  <br/><br/><br/><h2 align="center">Formulaire de contact</h2>
+  <form>
+    <label>Nom</label>
+    <input type="text" placeholder="Nom" id = "name" class="form-control" >
+    <label>Email</label>
+    <input type="text" placeholder="Email" id = "mail" class="form-control" required>
+    <label>Text Area</label>
+    <input type="text" placeholder="TextArea" id = "body" class="form-control" >
+    <br/><br/>
+    <button onclick="myFunction()" class="btn2 btn-neutral btn-round">Valider</button><br/>
+    <a href ="index.html" class="btn btn-neutral btn-round ">Retour</a>
+  </form>
+</section>
+
+</div>
+<section class="contact">
+  <footer>
+    <p>
+      <h6>Me contacter</h6>
+      TEL:     +33 6 66 78 07 08<br/>
+      Mail: <a href="mailto:guilhem.couvin@gmail.com">guilhem.couvin@gmail.com</a><br/>
+      Adresse: 361 rue de Vaugirard 75015 Paris<br/>
+    </p>
+  </footer>
+</section>
+
+<script>
+      function myFunction() {
+        var input = document.getElementById('subject');
+        subject = input.value;
+        var input = document.getElementById('body');
+        body = input.value;
+
+        window.location.href = "mailto:guilhem.couvin@gmail.com?subject=' + subject + '&body=' + body";
+      }
+    </script>
+
+</body>
+</html>
+
+
+
+
