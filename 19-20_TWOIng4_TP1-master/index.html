@@ -9,96 +9,89 @@
   		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
-<body>
-
-	<!-- NAVBAR -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top ">
-  <a class="navbar-brand" href="#">MyResume</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#about">À Propos <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#expe">Formation & Expériences</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#skill">Compétences & Langues</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#interest">Engagements & Interets</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#contact">Contact</a>
-      </li>
-    </ul>
-  </div>
-</nav> 
+<body style="background-color: #ECF0F1;">
 
 <div class="page">
 <section class="about">
 	<div class="info">
     <img class="photo" src="img/photo_identite.jpeg" alt="Photo CV Guilhem Couvin"/>
-		<p class="myInfo">
+		<p class="myInfo" align="center"style="color:white;">
+      <br/><br/>
       <strong>Guilhem Couvin</strong><br/>
-      Né le 17 Juin 1997<br/><br/>
-      361 rue de Vaugirard 75015 Paris<br/>
-      +33 6 66 78 07 08<br/>
-      guilhem.couvin@gmail.com 
+      Étudiant en école d'ingénieur
     </p>
 	</div>
 </section>
 
 <section class="expe">
-	<div class="formation">
-
+	<div class="myExpe">
+    <br/><br/><br/><br/><h2 align="center">Formation & Expériences</h2><br/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Ma foramtion</h4>
+    <p class="formation">
+      <strong>Formation</strong><br/>
+      Aujourd'hui, Master 1 Objet Connecté Réseaux & Services à l'ECE<br/>
+      Diplomé d'un Baccalauréat section Scientifique en 2016 avec mention Assez bien 
+    </p><br/>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Mes expériences professionnelles</h4>
+    <p class="experience" align="center">
+      <strong>Développement Web</strong><br/>
+      ENTREPRISE MOODWALK<br/>
+      Récupération et organisation de données statistiques clients et utilisateurs à partir de la plateforme <br/>
+      Développement d’une méthode générant automatiquement les rapports expérience-utilisateur à partir de ces données (Google App Script, Google API, Ruby, GitHub)
+    </p>
+    <p class="experience" align="center">
+      <strong>Management de Projet</strong><br/>
+      MINISTÈRE DES ARMÉES - DéSIAG<br/>
+      Chargé de la ludification de l’expérience et de la modernisation de la marque employeur <br/>
+      Développement d’une méthodologie de Gamification au sein du Ministère<br/>
+      Présentation et vente du projet Gamification à divers entité du Ministère
+    </p>
+    <p class="experience" align="center">
+      <strong>Gestion de projets</strong><br/>
+      ECOLE CENTRALE D’ELECTRONIQUE<br/>
+      Septembre 2016 / Mai 2017 <br/>
+      Conception d’un tableau connecté (Responsable technique : Rédaction du cahier des charges, Modélisation en langage C) <br/>
+      Septembre 2017 / Mai 2018<br/>
+      Conception d’une serrure connectée (Chef de projet : Etude de marché sur l’existant, Conception et Réalisation technique d’un prototype)
+    </p>
+    <p class="experience" align="center">
+      <strong>Programmation</strong><br/>
+      ECOLE CENTRALE D’ELECTRONIQUE<br/>
+      Exploitation des langages C, C++, Matlab, Microsoft Excel.<br/>
+      Amélioration et innovation d’un programme de filtrage de signal sonore
+      <br/>
+      Création de jeux vidéos (graphisme, insertion d’un aléa, conception d’une intelligence artificielle en langage C) type Pac-Man, Age of Empire et jeux de carte numérique.
+    </p><br/>
 	</div>
 </section>
 
 <section class="skill">
-  <div class="formation">
+  <div class="mySkills">
+    <br/><br/>
+    <h2 align="center">Mes compétences</h2>
+    <h4>&nbsp;&nbsp;&nbsp;&nbsp;Compétences professionnelles</h4>
     
   </div>
 </section>
 
 <section class="interest">
-  <div class="formation">
+  <div class="myInterest">
     
   </div>
 </section>
 
 <section class="contact">
-	<footer class="formation">
-    
+	<footer>
+    <p>
+      <h4>Me contacter</h4>
+      TEL:     +33 6 66 78 07 08<br/>
+      Mail:    guilhem.couvin@gmail.com<br/>
+      Adresse: 361 rue de Vaugirard 75015 Paris
+
+    </p>
   </footer>
 </section>
 
-
-  <script type="text/javascript">
-    jQuery(function($) {
-      $(document).ready(function() {
-        //enabling stickUp on the '.navbar-wrapper' class
-        $('.navbar-wrapper').stickUp({
-          parts: {
-            0: 'banner',
-            1: 'aboutus',
-            2: 'specialties',
-            3: 'gallery',
-            4: 'feedback',
-            5: 'contact'
-          },
-          itemClass: 'menuItem',
-          itemHover: 'active',
-          topMargin: 'auto'
-        });
-      });
-    });
-  </script>
-  <script src="contactform/contactform.js"></script>
 </div>
 </body>
 </html>
