@@ -1,0 +1,16 @@
+.nav-link{
+	color: blue;
+	font-size: 10;
+}
+
+nav{
+	background-color: red;
+}
+
+.navbar-brand {
+    position: relative;
+    background: url(img/logo_cv.jpg);
+    width: 170px;
+    left: 15px;
+    background-size: contain;
+}

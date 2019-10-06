@@ -2,14 +2,20 @@
 <html>
 <head>
 	<title>My Resume</title>
-	<!-- Latest compiled and minified CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<!-- Bootstrap -->
+  		<!-- <link href="css/bootstrap.min.css" rel="stylesheet">
+  		<link rel="stylesheet" href="css/font-awesome.css">
+  		<link rel="stylesheet" href="css/animate.css">
+  		<link href="css/style.css" rel="stylesheet"> -->
+
+  	<!-- Latest compiled and minified CSS -->
+  		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </head>
 <body>
 
 	<!-- NAVBAR -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top ">
   <a class="navbar-brand" href="#">MyResume</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -18,31 +24,94 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
-        <a class="nav-link" href="#">À Propos <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="#about">À Propos <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Formation & Expériences</a>
+        <a class="nav-link" href="#expe">Formation & Expériences</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Compétences & Langues</a>
+        <a class="nav-link" href="#skill">Compétences & Langues</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Engagements & Interets</a>
+        <a class="nav-link" href="#interest">Engagements & Interets</a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          *Menu déroulant*
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action 1</a>
-          <a class="dropdown-item" href="#">Action 2</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact">Contact</a>
       </li>
     </ul>
   </div>
-</nav>
+</nav> 
+
+          
+
+<section class="about" id="about">
+	<div class="bloc">
+		<img src="img/desk1.jpg" style="width: 899px;		
+										display: block;
+										margin-right: auto;
+										margin-left: auto;
+										background-repeat:no-repeat;">
+		<p align="center">
+			Bonjour, je m'appelle Guilhem Couvin.
+		</p>
+	</img>
+	</div>
+</section>
+
+
+
+<section class="expe" id="expe">
+	<div class="bloc" align="center" style="background-image: url(img/desk2.jpg);
+											width: 100%;
+											height: 600px;				
+											display: block;
+											margin-right: auto;
+											margin-left: auto;
+											background-repeat:no-repeat;">
+		<p align="center">
+			Bonjour, je m'appelle Guilhem Couvin.
+		</p>
+	</div>
+</section>
+
+
+
+
+
+<section class="skill"></section>
+
+<section class="interest"></section>
+
+<section class="contact">
+	<footer class="contact"></footer>
+</section>
+
+
+  <script type="text/javascript">
+    jQuery(function($) {
+      $(document).ready(function() {
+        //enabling stickUp on the '.navbar-wrapper' class
+        $('.navbar-wrapper').stickUp({
+          parts: {
+            0: 'banner',
+            1: 'aboutus',
+            2: 'specialties',
+            3: 'gallery',
+            4: 'feedback',
+            5: 'contact'
+          },
+          itemClass: 'menuItem',
+          itemHover: 'active',
+          topMargin: 'auto'
+        });
+      });
+    });
+  </script>
+  <script src="contactform/contactform.js"></script>
 
 </body>
 </html>
+
+
+
+
